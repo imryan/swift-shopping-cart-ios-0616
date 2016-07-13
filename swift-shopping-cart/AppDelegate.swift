@@ -7,18 +7,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         
-        /**
-
-        * Manually test your classes here.
-
-        */
+        let item = Item(name: "Item", priceInCents: 10)
+        let item2 = Item(name: "Item", priceInCents: 10)
         
-        // Do not alter
-        return true //
-    }   /////////////
-}       ////////////
+        print(item == item2)
+        
+        return true
+    }
+}
 
